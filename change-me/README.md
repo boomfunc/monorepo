@@ -25,9 +25,6 @@ To-do list:
 * Wow improvement to be done 1
 * Wow improvement to be done 2
 
-## Screenshots
-![Example screenshot](Readme/newton-logo.png)
-
 ## Technologies
 * Tech 1 - version 1.0
 * Tech 2 - version 2.0

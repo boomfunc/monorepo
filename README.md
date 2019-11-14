@@ -29,7 +29,7 @@ To-do list:
 * Wow improvement to be done 2
 
 ## Screenshots
-![Example screenshot](Readme/newton-logo.png)
+![Example screenshot](example_screenshot.png)
 
 ## Technologies
 * Tech 1 - version 1.0
