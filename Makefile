@@ -76,7 +76,7 @@ FORMAT_ROOTS = $(sort \
 define SHELL_SORT_REVERSE_BY_LEN
 	echo '$(1)' | \
 	xargs -n1 | \
-	awk '{ print length, $$0 }' | \
+	awk '{ print length($$0), $$0 }' | \
 	sort -rn | \
 	cut -d' ' -f2- | \
 	xargs
