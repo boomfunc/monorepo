@@ -29,6 +29,7 @@ make_install_by_package_manager()
 }
 
 
+# Phase 1. We need `GNUmake`.
 # The only target cannot be resolved by make - GNUmake itself.
 # Main idea - we dont know where `make` session was invoked.
 # Maybe there is not GNUmake installed. Detect system, package manager and install it.
@@ -43,13 +44,15 @@ then
 fi
 
 
+# Phase 2. Print information about installed `GNUmake`.
 echo ${LOG_SEPARATOR}
 make --version
+
+
+# Phase 3. Selftest block. Can we use current make in proper way?
 echo ${LOG_SEPARATOR}
-# Selftest block. Can we use current make in proper way?
 echo 'Selftest (look at root Makefile `selftest` target):'
 make selftest
-echo ${LOG_SEPARATOR}
 
 
 # Get required variables for running make session from caller.
@@ -57,5 +60,7 @@ readonly DIFF
 readonly DIFF_MOD
 
 
+# Phase 4. Doing main job.
 # Make installed, version is compatible, just forward request to his binary.
+echo ${LOG_SEPARATOR}
 make DIFF_MOD="${DIFF_MOD}" DIFF="${DIFF}" $@
