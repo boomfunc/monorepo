@@ -7,7 +7,7 @@ TERRAFORM := $(shell which terraform)
 ifeq ($(TERRAFORM),)
 	# Case when bainary is not installed. We have target below for installing stable version.
 	TERRAFORM := $(HOME)/bin/terraform
-	TERRAFORM_VERSION := 0.12.12
+	TERRAFORM_VERSION := 0.12.15
 	TERRAFORM_RELEASE_LINK := https://releases.hashicorp.com/terraform/$(TERRAFORM_VERSION)/terraform_$(TERRAFORM_VERSION)_linux_amd64.zip
 endif
 
