@@ -12,5 +12,5 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 2
 
-[*.{mjs,rc,js,css,html,sass,json}]
+[*.{mjs,rc,js,css,html,sass,json,svelte}]
 indent_size = 2
