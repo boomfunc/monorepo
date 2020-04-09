@@ -5,7 +5,6 @@
 ## Table of contents
 * [General info](#general-info)
 * [Status](#status)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Code examples](#code-examles)
@@ -27,9 +26,6 @@ Project is: _in progress_, _finished_, _no longer continue_ and why?
 To-do list:
 * Wow improvement to be done 1
 * Wow improvement to be done 2
-
-## Screenshots
-![Example screenshot](boomfunc.png)
 
 ## Technologies
 * Tech 1 - version 1.0
@@ -98,7 +94,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Versioning
 
-For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## License
 

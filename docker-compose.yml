@@ -12,8 +12,8 @@ x-defaults:
     volumes:
       - home-vol:/root
       - ssh-vol:/root/.ssh
-      - src-vol:/go/src/github.com/newtonworld/root
-    working_dir: /go/src/github.com/newtonworld/root
+      - src-vol:/go/src/github.com/boomfunc/monorepo
+    working_dir: /go/src/github.com/boomfunc/monorepo
     entrypoint: .make/make.sh
     logging:
       options:

@@ -1,4 +1,5 @@
 # This Makefile describes the behavior of a node that was written on golang.
+include $(ROOT)/.make/git.mk
 
 
 # Get the go bin path.
@@ -12,15 +13,9 @@ endif
 
 
 # Set golang global env variables.
-export GOPRIVATE=git.newtonworld.cloud,github.com/boomfunc
+export GOPRIVATE=github.com/boomfunc
 export GOROOT=/usr/local/go
 export GOPATH=/go
-
-
-# Tell git to use ssh clone instead https (for private repos).
-# Workaround with invoking at initialization stage of this Makefile.
-GITHUB_REWRITE := $(shell git config --global url.git@github.com:.insteadOf https://github.com/)
-GITEA_REWRITE := $(shell git config --global url.gitea@git.newtonworld.cloud:.insteadOf https://git.newtonworld.cloud/)
 
 
 # Find source files (using find instead of wildcard resolves any depth issue).
@@ -48,7 +43,8 @@ golang-fmt: $(GO) $(GO_SOURCE_FILES)
 .PHONY: golang-test
 golang-test: $(GO) $(GO_TEST_SOURCE_FILES)
 	#### Node( '$(NODE)' ).Call( '$@' )
-	$(GO) test -race -cover ./...
+	$(GO) test -race -cover -coverprofile=coverage.out ./...
+	$(GO) tool cover -html=coverage.out -o=coverage.html
 
 
 # Build and run section. Convert source code to executable and provide process.
