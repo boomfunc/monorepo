@@ -102,5 +102,5 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Authors
 
-* **Roman Zhukovskii** - *Initial work* - [NewtonWorld](https://github.com/NewtonWorld)
+* **Roman Zhukovskii** - *Initial work*
 
