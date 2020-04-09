@@ -29,7 +29,7 @@ To-do list:
 * Wow improvement to be done 2
 
 ## Screenshots
-![Example screenshot](example_screenshot.png)
+![Example screenshot](boomfunc.png)
 
 ## Technologies
 * Tech 1 - version 1.0
@@ -112,9 +112,9 @@ List of features ready and TODOs for future development
 
 ## Authors
 
-* **Roman Zhukovskii** - *Initial work* - [NewtonWorld](https://github.com/NewtonWorld)
+* **Roman Zhukovskii** - *Initial work*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## Contact
-Created by [@r.zhukovskii](https://www.newtonworld.com/) - feel free to contact me!
+Created by [@Roman-Zhukovskii](https://boomfunc.io/) - feel free to contact me!
