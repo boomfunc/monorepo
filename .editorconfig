@@ -13,5 +13,5 @@ max_line_length = 80
 indent_style = space
 indent_size = 2
 
-[*.{mjs,rc,js,css,html,sass,json,svelte}]
+[*.{mjs,rc,js,css,html,sass,svelte}]
 indent_size = 2
